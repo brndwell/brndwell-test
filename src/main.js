@@ -4,19 +4,19 @@ document.querySelector('#assessment-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
-  
+
   // Simulation of submission
   const btn = e.target.querySelector('button');
   const originalText = btn.innerText;
-  
+
   btn.innerText = 'Processing...';
   btn.disabled = true;
-  
+
   setTimeout(() => {
     console.log('Form Submitted (Mock):', data);
     btn.innerText = 'Assessment Received';
     btn.style.backgroundColor = '#10b981'; // Green success state
-    
+
     // Reset after some time
     setTimeout(() => {
       btn.innerText = originalText;
@@ -96,3 +96,23 @@ if (carousel) {
   createDots();
   startAuto();
 }
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    const isActive = faqItem.classList.contains('is-active');
+
+    // Close all other items
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.classList.remove('is-active');
+      item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+
+    // Toggle current item
+    if (!isActive) {
+      faqItem.classList.add('is-active');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});

@@ -1,125 +1,201 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Law Firm Intelligence | Secure Decision Support</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css">
-  </head>
-  <body>
-    <header style="padding: 1.5rem 0; position: absolute; width: 100%; z-index: 10;">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-        <div class="brand">
-          <img class="brand-logo" src="./public/branding-logo.png" alt="JusticeLens logo">
-          <div class="brand-name">
-            JUSTICE<span>LENS</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law Firm Intelligence | Secure Decision Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <header style="padding: 1.5rem 0; position: absolute; width: 100%; z-index: 10;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="brand">
+        <img class="brand-logo" src="./public/branding-logo.png" alt="JusticeLens logo">
+        <div class="brand-name">
+          JUSTICE<span>LENS</span>
         </div>
-        <nav>
-          <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Get Started</a>
-        </nav>
       </div>
-    </header>
+      <nav>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Get Started</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content animate-fade-in">
-            <h1 class="text-gradient">Legal Clarity, Simplified.</h1>
-            <p>Our parallel intake system provides decision support for Personal Injury firms, helping you focus on the cases that matter most. Calm, clear, and confident.</p>
-            <div style="display: flex; gap: 1rem;">
-              <a href="#contact" class="btn btn-primary">Initial Assessment</a>
-              <a href="#services" class="btn" style="border: 1px solid var(--primary); color: var(--primary);">Learn More</a>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content animate-fade-in">
+          <h1 class="text-gradient">Legal Clarity, Simplified.</h1>
+          <p>Our parallel intake system provides decision support for Personal Injury firms, helping you focus on the
+            cases that matter most. Calm, clear, and confident.</p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#contact" class="btn btn-primary">Initial Assessment</a>
+            <a href="#services" class="btn" style="border: 1px solid var(--primary); color: var(--primary);">Learn
+              More</a>
           </div>
         </div>
-      </section>
-
-      <section id="showcase" class="carousel-section">
-        <div class="container">
-          <div class="carousel-header">
-            <h2>Case Highlights</h2>
-            <p>Swap in your own images to showcase client outcomes, firm culture, or featured wins.</p>
-          </div>
-          <div class="carousel" data-carousel>
-            <button class="carousel-btn prev" type="button" aria-label="Previous image" data-carousel-prev>Prev</button>
-            <div class="carousel-track" data-carousel-track>
-              <div class="carousel-slide is-active">
-                <img src="./public/images/slide-01.jpeg" alt="Confident legal team in a bright office">
-                <div class="carousel-caption">Confident, client-first intake experiences.</div>
-              </div>
-              <div class="carousel-slide">
-                <img src="./public/images/slide-02.jpeg" alt="Attorney reviewing case materials">
-                <div class="carousel-caption">Sharper decisions with clean case data.</div>
-              </div>
-              <div class="carousel-slide">
-                <img src="./public/images/slide-03.jpeg" alt="Team meeting with dashboards">
-                <div class="carousel-caption">Dashboards that keep your team aligned.</div>
-              </div>
-            </div>
-            <button class="carousel-btn next" type="button" aria-label="Next image" data-carousel-next>Next</button>
-          </div>
-          <div class="carousel-dots" data-carousel-dots></div>
-        </div>
-      </section>
-
-      <section id="services" style="background-color: var(--bg-alt);">
-        <div class="container text-center">
-          <h2 style="margin-bottom: var(--space-md); text-align: center;">How We Support Your Firm</h2>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md);">
-            <div class="form-card" style="padding: var(--space-md);">
-              <h3 style="margin-bottom: 1rem;">Intelligent Filtering</h3>
-              <p>Automated eligibility screening that separates noise from high-value opportunities.</p>
-            </div>
-            <div class="form-card" style="padding: var(--space-md);">
-              <h3 style="margin-bottom: 1rem;">Case Optimization</h3>
-              <p>Directing claimant data into actionable insights for your legal team.</p>
-            </div>
-            <div class="form-card" style="padding: var(--space-md);">
-              <h3 style="margin-bottom: 1rem;">Premium UX</h3>
-              <p>Designed to be calm and reassuring for potential clients during stressful times.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-lg); align-items: center;">
-          <div>
-            <h2>Begin Your Assessment</h2>
-            <p style="margin-top: 1rem; color: var(--text-muted);">Fill out the form to see how our intake logic can streamline your case management flow.</p>
-          </div>
-          <div class="form-card animate-fade-in">
-            <form id="assessment-form">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="John Doe" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Work Email</label>
-                <input type="email" id="email" placeholder="john@firm.com" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Firm Details</label>
-                <textarea id="message" rows="4" placeholder="Briefly describe your firm's focus..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Assessment</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer style="padding: var(--space-md) 0; border-top: 1px solid #eee; background: var(--bg-alt);">
-      <div class="container text-center" style="text-align: center; color: var(--text-muted);">
-        <p>&copy; 2026 JusticeLens. A Brndwell calibration project.</p>
       </div>
-    </footer title="Law Firm Intelligence | Secure Decision Support">
+    </section>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <section id="showcase" class="carousel-section">
+      <div class="container">
+        <div class="carousel-header">
+          <h2>Case Highlights</h2>
+          <p>Swap in your own images to showcase client outcomes, firm culture, or featured wins.</p>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous image" data-carousel-prev>Prev</button>
+          <div class="carousel-track" data-carousel-track>
+            <div class="carousel-slide is-active">
+              <img src="./public/images/slide-01.jpeg" alt="Confident legal team in a bright office">
+              <div class="carousel-caption">Confident, client-first intake experiences.</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="./public/images/slide-02.jpeg" alt="Attorney reviewing case materials">
+              <div class="carousel-caption">Sharper decisions with clean case data.</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="./public/images/slide-03.jpeg" alt="Team meeting with dashboards">
+              <div class="carousel-caption">Dashboards that keep your team aligned.</div>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next image" data-carousel-next>Next</button>
+        </div>
+        <div class="carousel-dots" data-carousel-dots></div>
+      </div>
+    </section>
+
+    <section id="services" style="background-color: var(--bg-alt);">
+      <div class="container text-center">
+        <h2 style="margin-bottom: var(--space-md); text-align: center;">How We Support Your Firm</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md);">
+          <div class="form-card" style="padding: var(--space-md);">
+            <h3 style="margin-bottom: 1rem;">Intelligent Filtering</h3>
+            <p>Automated eligibility screening that separates noise from high-value opportunities.</p>
+          </div>
+          <div class="form-card" style="padding: var(--space-md);">
+            <h3 style="margin-bottom: 1rem;">Case Optimization</h3>
+            <p>Directing claimant data into actionable insights for your legal team.</p>
+          </div>
+          <div class="form-card" style="padding: var(--space-md);">
+            <h3 style="margin-bottom: 1rem;">Premium UX</h3>
+            <p>Designed to be calm and reassuring for potential clients during stressful times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-md); text-align: center;">
+          <h2>Frequently Asked Questions</h2>
+          <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">Everything you need to know about
+            how JusticeLens streamlines your law firm's intake process.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              What types of cases do you handle?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>We specialize in Personal Injury, including motor vehicle accidents, workplace injuries, and medical
+                  malpractice. Our system is designed to identify high-value opportunities within these sectors quickly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              How does your intake system work?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Our secure, parallel intake logic allows your firm to process claimant data in real-time. By
+                  automating the initial screening, we provide deep analytics on case viability while maintaining a
+                  calm, reassuring experience for the claimant.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Is my firm's data secure?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Absolutely. We use industry-standard encryption and secure decision support protocols. Your firm's
+                  data is siloed and protected, ensuring that all legal intake information remains strictly confidential
+                  and compliant.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Can I customize the intake logic?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>Yes. Our platform is highly calibratable. You can adjust the success metrics, eligibility filters,
+                  and even the tone of the user interface to align perfectly with your firm's brand and operational
+                  preferences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container"
+        style="display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-lg); align-items: center;">
+        <div>
+          <h2>Begin Your Assessment</h2>
+          <p style="margin-top: 1rem; color: var(--text-muted);">Fill out the form to see how our intake logic can
+            streamline your case management flow.</p>
+        </div>
+        <div class="form-card animate-fade-in">
+          <form id="assessment-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" placeholder="john@firm.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Firm Details</label>
+              <textarea id="message" rows="4" placeholder="Briefly describe your firm's focus..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Assessment</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding: var(--space-md) 0; border-top: 1px solid #eee; background: var(--bg-alt);">
+    <div class="container text-center" style="text-align: center; color: var(--text-muted);">
+      <p>&copy; 2026 JusticeLens. A Brndwell calibration project.</p>
+    </div>
+  </footer title="Law Firm Intelligence | Secure Decision Support">
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
