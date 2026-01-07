@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Law Firm Intelligence | Secure Decision Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <header style="padding: 1.5rem 0; position: absolute; width: 100%; z-index: 10;">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo" style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--primary);">
+          JUSTICE<span style="color: var(--secondary);">LENS</span>
+        </div>
+        <nav>
+          <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content animate-fade-in">
+            <h1 class="text-gradient">Legal Clarity, Simplified.</h1>
+            <p>Our parallel intake system provides decision support for Personal Injury firms, helping you focus on the cases that matter most. Calm, clear, and confident.</p>
+            <div style="display: flex; gap: 1rem;">
+              <a href="#contact" class="btn btn-primary">Initial Assessment</a>
+              <a href="#services" class="btn" style="border: 1px solid var(--primary); color: var(--primary);">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" style="background-color: var(--bg-alt);">
+        <div class="container text-center">
+          <h2 style="margin-bottom: var(--space-md); text-align: center;">How We Support Your Firm</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md);">
+            <div class="form-card" style="padding: var(--space-md);">
+              <h3 style="margin-bottom: 1rem;">Intelligent Filtering</h3>
+              <p>Automated eligibility screening that separates noise from high-value opportunities.</p>
+            </div>
+            <div class="form-card" style="padding: var(--space-md);">
+              <h3 style="margin-bottom: 1rem;">Case Optimization</h3>
+              <p>Directing claimant data into actionable insights for your legal team.</p>
+            </div>
+            <div class="form-card" style="padding: var(--space-md);">
+              <h3 style="margin-bottom: 1rem;">Premium UX</h3>
+              <p>Designed to be calm and reassuring for potential clients during stressful times.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-lg); align-items: center;">
+          <div>
+            <h2>Begin Your Assessment</h2>
+            <p style="margin-top: 1rem; color: var(--text-muted);">Fill out the form to see how our intake logic can streamline your case management flow.</p>
+          </div>
+          <div class="form-card animate-fade-in">
+            <form id="assessment-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" placeholder="john@firm.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Firm Details</label>
+                <textarea id="message" rows="4" placeholder="Briefly describe your firm's focus..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Assessment</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="padding: var(--space-md) 0; border-top: 1px solid #eee; background: var(--bg-alt);">
+      <div class="container text-center" style="text-align: center; color: var(--text-muted);">
+        <p>&copy; 2026 JusticeLens. A Brndwell calibration project.</p>
+      </div>
+    </footer title="Law Firm Intelligence | Secure Decision Support">
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
