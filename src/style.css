@@ -55,6 +55,30 @@ section {
   padding: var(--space-xl) 0;
 }
 
+/* Brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+}
+
+.brand-name span {
+  color: var(--secondary);
+}
+
 /* Typography Utilities */
 .text-gradient {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -113,6 +137,111 @@ section {
   margin-bottom: var(--space-md);
 }
 
+/* Carousel */
+.carousel-section {
+  background: linear-gradient(160deg, rgba(10, 37, 64, 0.04), rgba(0, 212, 255, 0.06));
+}
+
+.carousel-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.carousel-header p {
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: 0 30px 60px rgba(10, 37, 64, 0.12);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: clamp(260px, 50vw, 420px);
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  background: rgba(10, 37, 64, 0.8);
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary);
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(10, 37, 64, 0.2);
+  transition: var(--transition);
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.03);
+}
+
+.carousel-btn.prev {
+  left: 1rem;
+}
+
+.carousel-btn.next {
+  right: 1rem;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(10, 37, 64, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.carousel-dot.is-active {
+  width: 28px;
+  border-radius: 999px;
+  background: var(--secondary);
+}
+
 /* Form Section */
 .form-card {
   background: var(--white);
@@ -162,4 +291,28 @@ input:focus, textarea:focus {
 
 .animate-fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@media (max-width: 900px) {
+  .carousel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .carousel-btn {
+    padding: 0.45rem 0.75rem;
+  }
+
+  .carousel-caption {
+    font-size: 0.9rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
